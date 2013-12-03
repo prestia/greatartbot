@@ -1,0 +1,4 @@
+# Enter your information and save as rsync.py
+SSH_KEY = ''
+LOCAL_DIRECTORY = ''
+REMOTE_DIRECTORY = ''

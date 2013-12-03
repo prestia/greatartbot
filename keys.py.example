@@ -1,0 +1,5 @@
+# Enter your information and rename as keys.py
+APP_KEY = ''
+APP_SECRET = ''
+OAUTH_TOKEN = ''
+OAUTH_TOKEN_SECRET = ''
