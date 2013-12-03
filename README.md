@@ -21,3 +21,6 @@ Notes:
 
 Future:
  * I'd really like to have `promoter.py` title each piece of work before tweeting it out. I'm having a hard time deciding where to draw words to assemble the titles from though. Suggestions are welcome.
+
+MOST IMPORTANTLY:
+ * Thanks to [Michael Brough](http://smestorp.com) ([@smestorp](http://twitter.com/smestorp)) & [Andi McClure](http://runhello.com) ([@mcclure111](https://twitter.com/mcclure111)) for making [Become a Great Artist in Just 10 Seconds](http://www.ludumdare.com/compo/ludum-dare-27/comment-page-1/?action=preview&uid=4987).
