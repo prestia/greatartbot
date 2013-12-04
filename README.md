@@ -22,7 +22,7 @@ Notes:
 
 Future:
  * I'd really like to have `promoter.py` title each piece of work before tweeting it out. I'm having a hard time deciding where to draw words to assemble the titles from though. Suggestions are welcome.
- * Make the bot a MUCH BETTER ARTIST by adding in [these keys](https://twitter.com/smestorp/status/408015839078539264).
+ ~~* Make the bot a MUCH BETTER ARTIST by adding in [these keys](https://twitter.com/smestorp/status/408015839078539264).~~
 
 License:
  * It has one.
