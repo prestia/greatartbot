@@ -9,6 +9,9 @@ def main():
 	path = getcwd()
 	artistapp = path + "/artist_mac"
 
+	# Change this to reflect how many pictures you want made in one execution of artist.py
+	this_many_pictures = 1
+
 	# Launch ARTIST as a non-blocking subprocess
 	Popen(artistapp)
 	
@@ -26,7 +29,7 @@ def main():
 	time.sleep(1)
 	autopy.key.tap('x')
 
-	while imgnum < 5:
+	while imgnum < this_many_pictures:
 		stop = time.time()+10
 		while time.time() < stop:
 			time.sleep(.5)
