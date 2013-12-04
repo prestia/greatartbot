@@ -20,13 +20,13 @@ def main():
 
 	# MAKE ART
 	imgnum = 0
-	keys = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','y','z',autopy.key.K_LEFT,autopy.key.K_RIGHT,autopy.key.K_DOWN,autopy.key.K_UP]
+	keys = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','y','z','0','1','2','3','4','5','6','7','8','9','-','+',autopy.key.K_F1,autopy.key.K_F2,autopy.key.K_F3,autopy.key.K_F4,autopy.key.K_F5,autopy.key.K_F6,autopy.key.K_F7,autopy.key.K_F8,autopy.key.K_F9,autopy.key.K_F10,autopy.key.K_F11,autopy.key.K_F12,autopy.key.K_LEFT,autopy.key.K_RIGHT,autopy.key.K_DOWN,autopy.key.K_UP]
 
 	# Remove the yellow square
 	time.sleep(1)
 	autopy.key.tap('x')
 
-	while imgnum < 1:
+	while imgnum < 5:
 		stop = time.time()+10
 		while time.time() < stop:
 			time.sleep(.5)
