@@ -1,5 +1,9 @@
 # @greatartbot
 
+What is this?
+
+[@greatartbot](http://twitter.com/greatartbot) is a fully automated artist. This vexing virtual virtuoso uses [Michael Brough](http://smestorp.com) and [Andi McClure](http://runhello.com)'s [Become a Great Artist in Just 10 Seconds](http://www.ludumdare.com/compo/ludum-dare-27/comment-page-1/?action=preview&uid=4987) to create artwork that is sometimes beautiful and sometimes WAY TOO BEAUTIFUL FOR YOUR STUPID HUMAN EYES. Oh, yeah, it also shares them on twitter.
+
 Requirements:
  * Autopy
  * Twython
