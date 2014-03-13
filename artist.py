@@ -24,11 +24,14 @@ def main():
 	# MAKE ART
 	imgnum = 0
 
-	# Remove the yellow square
+	# Remove the yellow square/"cursor"
 	time.sleep(1)
 	autopy.key.tap('x')
 
 	while imgnum < this_many_pictures:
+		
+		# START ALGORITHM #
+		# Note: The production version of @greatartbot has evolved a lot since this code was released. The real fun of this bot is messing with this section of code until your bot is producing art that you like. Play! Have fun!
 
 		# Select the set of keys to be used
 		usearray = randrange(5)
@@ -53,6 +56,8 @@ def main():
 			elif action == 2:
 				autopy.key.tap(keys[keynum])
 
+		# END ALGORITHM #
+		
 		# Stop all input
 		i = 0
 		while i < len(keys):
