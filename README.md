@@ -4,6 +4,10 @@ What is this?
 
 [@greatartbot](http://twitter.com/greatartbot) is a fully automated artist. This vexing virtual virtuoso uses [Michael Brough](http://smestorp.com) and [Andi McClure](http://runhello.com)'s [Become a Great Artist in Just 10 Seconds](http://www.ludumdare.com/compo/ludum-dare-27/comment-page-1/?action=preview&uid=4987) to create artwork that is sometimes beautiful and sometimes WAY TOO BEAUTIFUL FOR YOUR STUPID HUMAN EYES. Oh, yeah, it also shares them on twitter.
 
+Special Note:
+
+The production version of @greatartbot has evolved significantly since the release of this code. If you follow the bot, you've likely noticed that its output has evolved over time. This evolution is largely the result of me biasing the algorithm toward output that I enjoy, but I've also been experimenting with having the bot learn from Twitter feedback. This, in my opinion, is the most interesting part of a bot like @greatartbot. I encourage you all to fiddle with this code and make great artists of your own!
+
 Requirements:
  * Autopy
  * Twython
@@ -21,12 +25,11 @@ Gist:
 
 Notes:
  * I will (probably) make this README more complete and helpful in the future.
- * I will (maybe, but not likely) make my code a bit cleaner and mess with the algorithm for generating art.
+ * I will (maybe, but not likely) make my code a bit cleaner.
  * I will (absolutely) ask your forgiveness if you try to read this slop.
 
 Future:
  * I'd really like to have `promoter.py` title each piece of work before tweeting it out. I'm having a hard time deciding where to draw words to assemble the titles from though. Suggestions are welcome.
- * ~~Make the bot a MUCH BETTER ARTIST by adding in [these keys](https://twitter.com/smestorp/status/408015839078539264).~~
 
 License:
  * It has one.
