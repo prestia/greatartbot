@@ -27,10 +27,10 @@ def main():
 def promote(masterpiece):
 
 	m = Mastodon(access_token='mastodon.secret', api_base_url='https://botsin.space')
-	t = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-	
 	art = m.media_post(masterpiece, "image/png")
 	m.status_post("", media_ids=art["id"])
+
+	t = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 	t.update_status_with_media(status='', media=masterpiece)
 
 if __name__ == "__main__":
