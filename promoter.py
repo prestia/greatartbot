@@ -10,7 +10,6 @@ def main():
 	# Open curator file to see which line of the studio log needs to be read
 	f = open(path + 'curator.log', 'r+')
 	bookmark = f.readline().rstrip()
-	print bookmark
 	index = int(bookmark)
 	bookmark = int(bookmark) + 1
 	f.seek(0)
