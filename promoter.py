@@ -20,9 +20,8 @@ def main():
 	# Read the title of the artwork from the specified line in the studio log, then strip the \n and save to titleofart
 	titleofart = linecache.getline(path + 'studio.log', index).rstrip()
 
-	artwork = open(path + titleofart + '.png', 'rb')
-	toot(artwork)
-	tweet(artwork)
+	tweet(open(path + titleofart + '.png', 'rb'))
+	toot(open(path + titleofart + '.png', 'rb'))
 
 def toot(masterpiece):
 
