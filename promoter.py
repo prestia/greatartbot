@@ -22,13 +22,16 @@ def main():
 	titleofart = linecache.getline(path + 'studio.log', index).rstrip()
 
 	artwork = open(path + titleofart + '.png', 'rb')
-	promote(artwork)
+	toot(artwork)
+	tweet(artwork)
 
-def promote(masterpiece):
+def toot(masterpiece):
 
 	m = Mastodon(access_token='mastodon.secret', api_base_url='https://botsin.space')
 	art = m.media_post(masterpiece, "image/png")
 	m.status_post("", media_ids=art["id"])
+	
+def tweet(masterpiece):
 
 	t = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 	t.update_status_with_media(status='', media=masterpiece)
