@@ -2,7 +2,7 @@
 
 What is this?
 
-[@greatartbot](http://twitter.com/greatartbot) is a fully automated artist. This vexing virtual virtuoso uses [Michael Brough](http://smestorp.com) and [Andi McClure](http://runhello.com)'s [Become a Great Artist in Just 10 Seconds](http://www.ludumdare.com/compo/ludum-dare-27/comment-page-1/?action=preview&uid=4987) to create artwork that is sometimes beautiful and sometimes WAY TOO BEAUTIFUL FOR YOUR STUPID HUMAN EYES. Oh, yeah, it also shares them on twitter.
+[@greatartbot](http://twitter.com/greatartbot) (also on [Mastodon](https://botsin.space/@greatartbot)) is a fully automated artist. This vexing virtual virtuoso uses [Michael Brough](http://smestorp.com) and [Andi McClure](http://runhello.com)'s [Become a Great Artist in Just 10 Seconds](http://www.ludumdare.com/compo/ludum-dare-27/comment-page-1/?action=preview&uid=4987) to create artwork that is sometimes beautiful and sometimes WAY TOO BEAUTIFUL FOR YOUR STUPID HUMAN EYES. Oh, yeah, it also shares them on twitter. And now Mastodon!
 
 Special Note:
 
@@ -11,11 +11,12 @@ The production version of @greatartbot has evolved significantly since the relea
 Requirements:
  * Autopy
  * Twython
+ * Mastodon.py
  * Probably OS X. I dunno. Actually, yes, you probably need OS X. Whatever.
 
 How To Use:
  * Drop (or clone) the files in this repo into the directory of the post-compo [Become a Great Artist in Just 10 Seconds](http://www.ludumdare.com/compo/ludum-dare-27/comment-page-1/?action=preview&uid=4987).
- * Edit the settings in `keys.py.example` and `rsync.py.example`.
+ * Edit the settings in `keys.py.example`, `rsync.py.example`, and paste your Mastodon API key into `mastodon.secret`.
  * Set up cron jobs and see if it works on your system. I don't know. I'm an attorney, not a SOFTWARE ENGINEER.
  * You will probably have to change the coordinates of the screen capture unless you are also running OS X on a 1440 x 900 display.
 
