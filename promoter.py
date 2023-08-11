@@ -1,4 +1,4 @@
-from twython import Twython
+import tweepy
 from mastodon import Mastodon
 from twitter_keys import *
 from os import getcwd
@@ -20,8 +20,8 @@ def main():
 	# Read the title of the artwork from the specified line in the studio log, then strip the \n and save to titleofart
 	titleofart = linecache.getline(path + 'studio.log', index).rstrip()
 
-	tweet(open(path + titleofart + '.png', 'rb'))
 	toot(open(path + titleofart + '.png', 'rb'))
+	upload_and_tweet(path + titleofart + '.png')
 
 def toot(masterpiece):
 
@@ -29,10 +29,20 @@ def toot(masterpiece):
 	art = m.media_post(masterpiece, "image/png")
 	m.status_post("", media_ids=art["id"])
 	
+def upload_and_tweet(masterpiece):
+  
+  auth = tweepy.OAuth1UserHandler(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+  api = tweepy.API(auth)
+    
+  media = api.media_upload(masterpiece)
+  media_id = media.media_id
+  
+  tweet(media_id)
+  
 def tweet(masterpiece):
 
-	t = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-	t.update_status_with_media(status='', media=masterpiece)
+	t = tweepy.Client(consumer_key=APP_KEY, consumer_secret=APP_SECRET, access_token=OAUTH_TOKEN, access_token_secret=OAUTH_TOKEN_SECRET)
+	t.create_tweet(text='',media_ids=[masterpiece])
 
 if __name__ == "__main__":
     main()
