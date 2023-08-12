@@ -10,7 +10,7 @@ The production version of @greatartbot has evolved significantly since the relea
 
 Requirements:
  * Autopy
- * Twython
+ * Tweepy
  * Mastodon.py
  * Probably OS X. I dunno. Actually, yes, you probably need OS X. Whatever.
 
