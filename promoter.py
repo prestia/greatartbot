@@ -33,7 +33,7 @@ def skeet(masterpiece):
 	with open(masterpiece, 'rb') as f:
 		img_data = f.read()
 
-	client.send_image(text='', image=img_data, image_alt='')
+	b.send_image(text='', image=img_data, image_alt='')
 		
 def toot(masterpiece):
 
