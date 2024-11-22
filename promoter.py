@@ -1,6 +1,8 @@
 import tweepy
 from mastodon import Mastodon
+from atproto import Client
 from twitter_keys import *
+from bluesky_auth import *
 from os import getcwd
 import linecache
 
@@ -20,9 +22,19 @@ def main():
 	# Read the title of the artwork from the specified line in the studio log, then strip the \n and save to titleofart
 	titleofart = linecache.getline(path + 'studio.log', index).rstrip()
 
+	skeet(path + titleofart + '.png')
 	toot(open(path + titleofart + '.png', 'rb'))
 	upload_and_tweet(path + titleofart + '.png')
 
+def skeet(masterpiece):
+	b = Client()
+	b.login(BSKY_USERNAME, BSKY_PASSWORD)
+
+	with open(masterpiece, 'rb') as f:
+		img_data = f.read()
+
+	client.send_image(text='', image=img_data, image_alt='')
+		
 def toot(masterpiece):
 
 	m = Mastodon(access_token='mastodon.secret', api_base_url='https://botsin.space')
