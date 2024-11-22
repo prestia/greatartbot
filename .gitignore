@@ -95,6 +95,9 @@ ffi/
 gallery/
 jit/
 keys.py
+twitter_keys.py
+mastodon.secret
+bluesky_auth.py
 lib/
 project/
 README.txt
