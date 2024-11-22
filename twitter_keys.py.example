@@ -1,4 +1,4 @@
-# Enter your information and rename as keys.py
+# Enter your information and rename as twitter_keys.py
 APP_KEY = ''
 APP_SECRET = ''
 OAUTH_TOKEN = ''
