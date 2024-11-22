@@ -30,8 +30,8 @@ def skeet(masterpiece):
 	b = Client()
 	b.login(BSKY_USERNAME, BSKY_PASSWORD)
 
-	with open(masterpiece, 'rb') as f:
-		img_data = f.read()
+	with open(masterpiece, 'rb') as p:
+		img_data = p.read()
 
 	b.send_image(text='', image=img_data, image_alt='')
 		
