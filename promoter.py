@@ -37,7 +37,7 @@ def skeet(masterpiece):
 		
 def toot(masterpiece):
 
-	m = Mastodon(access_token='mastodon.secret', api_base_url='https://mastodon.bot')
+	m = Mastodon(access_token='mastodon.secret', api_base_url='https://mastodon.social')
 	art = m.media_post(masterpiece, "image/png")
 	m.status_post("", media_ids=art["id"])
 	
